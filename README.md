@@ -32,8 +32,8 @@
   <!-- ABOUT THE PROJECT -->
   ## About The Project
   ### Project Image  
-  ![product-screenshot](https://github.com/GgeoffG/PWA-text-editor/blob/main/images/Untitled.png)<br>
-  ![product-screenshot](https://github.com/GgeoffG/PWA-text-editor/blob/main/images/installedappwithtext)<br>
+  ![product-screenshot](https://github.com/GgeoffG/PWA-text-editor/blob/main/Images/Untitled.png)<br>
+  ![product-screenshot](https://github.com/GgeoffG/PWA-text-editor/blob/main/images/installedappwithtext.png)<br>
 
 Just Another Text Editor (J.A.T.E) is a project application used to demonstrate the usage of Progressive Web Applications. This includes the usage of service workers, webpack, and webpack plugins to create a functional web app that can be installed to your local machine. The installed local application can communicate with the web app making this a suitable solution to be used offline and online.
 
