@@ -1,142 +1,124 @@
-# 19 Progressive Web Applications (PWA): Text Editor
+#J.A.T.E
 
-## Your Task
+  <!-- TABLE OF CONTENTS -->
+  <details>
+    <summary>Table of Contents</summary>
+    <ol>
+      <li>
+        <a href="#about-the-project">About The Project</a>
+        <ul>
+          <li><a href="#Project Image">Project Images</a></li>
+          <li><a href="#built-with">Built With</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#getting-started">Getting Started</a>
+        <ul>
+          <li><a href="#prerequisites">Prerequisites</a></li>
+          <li><a href="#installation">Installation</a></li>
+        </ul>
+      </li>
+      <li><a href="#usage">Usage</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#contributing">Contributing</a></li>
+      <li><a href="#license">License</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#acknowledgments">Acknowledgments</a></li>
+    </ol>
+  </details>
+  
+  
+  
+  <!-- ABOUT THE PROJECT -->
+  ## About The Project
+  ### Project Image  
+  ![product-screenshot](https://github.com/GgeoffG/PWA-text-editor/blob/main/images/)<br>
+  Just Another Text Editor (J.A.T.E) is a project application used to demonstrate the usage of Progressive Web Applications. This includes the usage of service workers, webpack, and webpack plugins to create a functional web app that can be installed to your local machine. The installed local application can communicate with the web app making this a suitable solution to be used offline and online. 
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
+  
+  
+  ### Built With
+  
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
+  
+  
+  <!-- GETTING STARTED -->
+  
+   ## Getting Started
+  
+  
+  ### Prerequisites <br>
+  
+ ### Installation <br> 
+  To install this application as a developer you can:
 
-As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
+1.) Clone this repository
 
-Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+2.) run the install script
 
-To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
-
-You will deploy this full-stack application to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
-
-## User Story
-
-```md
-AS A developer
-I WANT to create notes or code snippets with or without an internet connection
-SO THAT I can reliably retrieve them for later use
+```
+npm run install
 ```
 
-## Acceptance Criteria
+3.) run the start script
 
-```md
-GIVEN a text editor web application
-WHEN I open my application in my editor
-THEN I should see a client server folder structure
-WHEN I run `npm run start` from the root directory
-THEN I find that my application should start up the backend and serve the client
-WHEN I run the text editor application from my terminal
-THEN I find that my JavaScript files have been bundled using webpack
-WHEN I run my webpack plugins
-THEN I find that I have a generated HTML file, service worker, and a manifest file
-WHEN I use next-gen JavaScript in my application
-THEN I find that the text editor still functions in the browser without errors
-WHEN I open the text editor
-THEN I find that IndexedDB has immediately created a database storage
-WHEN I enter content and subsequently click off of the DOM window
-THEN I find that the content in the text editor has been saved with IndexedDB
-WHEN I reopen the text editor after closing it
-THEN I find that the content in the text editor has been retrieved from our IndexedDB
-WHEN I click on the Install button
-THEN I download my web application as an icon on my desktop
-WHEN I load my web application
-THEN I should have a registered service worker using workbox
-WHEN I register a service worker
-THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
-WHEN I deploy to Heroku
-THEN I should have proper build scripts for a webpack application
+```
+npm run start
 ```
 
-## Mock-Up
+This will install the necessary dependencies, and then build your webpack application while starting your server
 
-The following animation demonstrates the application functionality:
+To install as a PWA local app:
 
-![Demonstration of the finished Module 19 Challenge being used in the browser and then installed.](./Assets/00-demo.gif)
+Go to the following URL <br>
+[J.A.T.E.] ()
 
-The following image shows the application's `manifest.json` file:
+Click on the "Install" button in the top left corner of the application.
 
-![Demonstration of the finished Module 19 Challenge with a manifest file in the browser.](./Assets/01-manifest.png)
-
-The following image shows the application's registered service worker:
-
-![Demonstration of the finished Module 19 Challenge with a registered service worker in the browser.](./Assets/02-service-worker.png)
-
-The following image shows the application's IndexedDB storage:
-
-![Demonstration of the finished Module 19 Challenge with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses IndexedDB to create an object store and includes both GET and PUT methods
-
-  * The application works without an internet connection
-
-  * Automatically saves content inside the text editor when the DOM window is unfocused
-
-  * Bundled with webpack
-
-  * Create a service worker with workbox that Caches static assets
-
-  * The application should use babel in order to use async / await
-
-  * Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
-
-  * Can be installed as a Progressive Web Application
-
-### Deployment: 32%
-
-* Application deployed to Heroku at live URL with build scripts
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
+  
+  
+  <!-- USAGE EXAMPLES -->
+  ## Usage <br>
+  Once running either in the deployed site or installed application, you can use this as you would any text editor. Simply type into the application. The app does recognize different aspects related to Javascript, and will highlight as if in a code editor.
+  
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
+  
+  
+  <!-- ROADMAP -->
+  ## Roadmap
+  This app is for demonstration purposes and no future development is planned. <br> 
+  See the [open issues](https://github.com/GgeoffG/PWA-text-editor/issues) for a full list of proposed features (and known issues).
+  
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
+  
+  
+  <!-- CONTRIBUTING -->
+  ## Contributing
+  This project is not accepting contributions
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
+  
+  
+  <!-- LICENSE -->
+  
+  
+  
+  <!-- CONTACT -->
+  ## Contact
+  
+  Geoffrey Langenberg - [@GeoffLangWrites] (https://twitter.com/GeoffLangWrites) - Geoffrey.langenberg@gmail.com
+  
+  Project Link: [https://github.com/GgeoffG/PWA-text-editor](https://github.com/GgeoffG/PWA-text-editor)
+  
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
+  
+  <!-- ACKNOWLEDGMENTS -->
+  ## Acknowledgments
+ UofO bootcamp provided the base code of this website- https://bootcamp.uoregon.edu/coding/landing
