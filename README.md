@@ -76,7 +76,7 @@ This will install the necessary dependencies, and then build your webpack applic
 To install as a PWA local app:
 
 Go to the following URL <br>
-[J.A.T.E.] ()
+[J.A.T.E.](https://justanothertexteditorbygeoff.herokuapp.com/)
 
 Click on the "Install" button in the top left corner of the application.
 
